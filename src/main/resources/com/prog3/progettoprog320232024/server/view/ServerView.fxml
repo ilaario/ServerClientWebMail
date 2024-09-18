@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="743.0" style="-fx-background-color: #E5F9E0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prog3.progettoprog320232024.server.controller.ServerController">
+   <children>
+      <AnchorPane prefHeight="638.0" prefWidth="94.0" style="-fx-background-color: #A3F7B5;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="startButton" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="51.0" prefWidth="74.0" styleClass="button-blue" stylesheets="@../../server/values/styles.css" text="Start" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="stopButton" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#onStopButtonClick" prefHeight="51.0" prefWidth="74.0" styleClass="button-blue" stylesheets="@../../server/values/styles.css" text="Stop" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="7.0" layoutY="14.0" text="Server-Email" textFill="#664147">
+               <font>
+                  <Font name="Constantia" size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#664147" glyphName="ENVELOPE" layoutX="35.0" layoutY="57.0" size="25" />
+            <Button fx:id="clearButton" layoutX="10.0" layoutY="449.0" mnemonicParsing="false" onAction="#onClearButtonClicked" prefHeight="51.0" prefWidth="74.0" styleClass="button-blue" stylesheets="@../../server/values/styles.css" text="Clear" textFill="#664147">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="logTextArea" layoutX="103.0" layoutY="14.0" prefHeight="616.0" prefWidth="629.0" AnchorPane.bottomAnchor="8.399999999999977" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="10.199999999999932" AnchorPane.topAnchor="14.399999999999977" />
+   </children>
+</AnchorPane>

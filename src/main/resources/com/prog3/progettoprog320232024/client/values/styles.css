@@ -1,0 +1,57 @@
+.button-blue{
+    -fx-background-color: #40C9A2;
+}
+
+.button-blue:hover{
+    -fx-background-color: #2F9C95;
+    -fx-scale-y: 1.06;
+    -fx-scale-x: 1.06;
+}
+
+.messageTextField{
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-background-radius: 5px;
+    -fx-border-color: #c2c0c0;
+}
+
+.messageTextArea{
+    -fx-border-radius: 5px;
+    -fx-border-style: solid;
+    -fx-background-radius: 5px;
+    -fx-border-color: #919090;
+}
+
+.roundedProfilePicture{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+
+.list-view:focused{
+    -fx-border-style: solid;
+    -fx-border-color: #664147;
+}
+
+.list-view .list-cell:selected{
+
+    -fx-background-color: derive(#a3f7b5,+90%);
+    -fx-text-fill: #664147;
+    -fx-border-style: solid;
+    -fx-border-color: #664147;
+
+}
+
+.text-area:focused{
+    -fx-text-fill: #664147;
+    -fx-border-style: solid;
+    -fx-border-color: #664147;
+}
+
+.list-view .list-cell{
+    -fx-background-color: white;
+    -fx-text-fill: #664147;
+}
